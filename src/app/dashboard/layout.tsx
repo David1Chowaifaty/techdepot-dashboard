@@ -25,6 +25,9 @@ export default function RootLayout({
           <NavLink href={"/dashboard/product"} className="text-gray-600">
             Products
           </NavLink>
+          <NavLink href={"/dashboard/orders"} className="text-gray-600">
+            Orders
+          </NavLink>
         </div>
       </nav>
       {children}

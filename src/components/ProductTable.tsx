@@ -46,6 +46,7 @@ import {
 } from "@/components/ui/table";
 import AddProduct from "./add-product";
 import { Capitalize } from "@/lib/utils";
+import { Category } from "@/app/dashboard/product/page";
 
 export const columns: ColumnDef<Product>[] = [
   {
@@ -152,7 +153,7 @@ export function ProductTable({
   categories,
 }: {
   data: Product[];
-  categories: { category: string }[];
+  categories: Category[];
 }) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
