@@ -4,7 +4,7 @@ import React from "react";
 
 export default async function Products() {
   const { data } = await axios.get(
-    "https://api-techdepot.onrender.com/product/getAllProducts/1&&0"
+    "https://api-techdepot.onrender.com/product/getAllProducts/10&&0"
   );
   const categories = await axios.get(
     "https://api-techdepot.onrender.com/product/getAllCategories"
